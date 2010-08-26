@@ -1,0 +1,326 @@
+[
+    {
+        "pk": 1,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Baghdad",
+            "point": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Salah ad Din",
+            "point": 2
+        }
+    },
+    {
+        "pk": 3,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Diyala",
+            "point": 3
+        }
+    },
+    {
+        "pk": 4,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Wasit",
+            "point": 4
+        }
+    },
+    {
+        "pk": 5,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Maysan",
+            "point": 5
+        }
+    },
+    {
+        "pk": 6,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Basra",
+            "point": 6
+        }
+    },
+    {
+        "pk": 7,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Dhi Qar",
+            "point": 7
+        }
+    },
+    {
+        "pk": 8,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Al Muthanna",
+            "point": 8
+        }
+    },
+    {
+        "pk": 9,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Al-Q\u0101disiyyah",
+            "point": 9
+        }
+    },
+    {
+        "pk": 10,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Babil",
+            "point": 10
+        }
+    },
+    {
+        "pk": 11,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Karbala",
+            "point": 11
+        }
+    },
+    {
+        "pk": 12,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Najaf",
+            "point": 12
+        }
+    },
+    {
+        "pk": 13,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Al Anbar",
+            "point": 13
+        }
+    },
+    {
+        "pk": 14,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Ninawa",
+            "point": 14
+        }
+    },
+    {
+        "pk": 15,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Duhok",
+            "point": 15
+        }
+    },
+    {
+        "pk": 16,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Erbil",
+            "point": 16
+        }
+    },
+    {
+        "pk": 17,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Kirkuk",
+            "point": 17
+        }
+    },
+    {
+        "pk": 18,
+        "model": "iffcpoll.governorate",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "name": "Sulaymaniyah",
+            "point": 18
+        }
+    },
+    {
+        "pk": 1,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "33.333333",
+            "longitude": "44.433333"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "34.45",
+            "longitude": "43.583333"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "33.883333",
+            "longitude": "45.066667"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "32.666667",
+            "longitude": "45.75"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "31.9",
+            "longitude": "47.033333"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "30.366667",
+            "longitude": "47.366667"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "31.233333",
+            "longitude": "46.316667"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "30.2",
+            "longitude": "45.35"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "31.85",
+            "longitude": "45.05"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "32.616667",
+            "longitude": "44.55"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "32.45",
+            "longitude": "43.8"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "31.116667",
+            "longitude": "43.8"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "32.9",
+            "longitude": "41.6"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "36",
+            "longitude": "42.466667"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "37.05",
+            "longitude": "43.15"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "36.183333",
+            "longitude": "44.033333"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "35.366667",
+            "longitude": "44.133333"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "locations.point",
+        "fields": {
+            "latitude": "35.516667",
+            "longitude": "45.316667"
+        }
+    }
+]
