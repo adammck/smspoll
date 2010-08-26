@@ -12,7 +12,7 @@
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": "rapidsms.sqlite3"
+        "NAME": "smspoll.sqlite3"
     }
 }
 
@@ -51,10 +51,6 @@ INSTALLED_APPS = [
     "djtables",
     "rapidsms",
 
-    # common dependencies (which don't clutter up the ui).
-    "rapidsms.contrib.handlers",
-    "rapidsms.contrib.ajax",
-
     # enable the django admin using a little shim app (which includes
     # the required urlpatterns), and a bunch of undocumented apps that
     # the AdminSite seems to explode without.
@@ -65,17 +61,14 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "rapidsms.contrib.djangoadmin",
 
-    # the rapidsms contrib apps.
-    "rapidsms.contrib.default",
-    "rapidsms.contrib.export",
-    "rapidsms.contrib.httptester",
+    # apps actually used by this project.
+    "rapidsms.contrib.ajax",
+    "rapidsms.contrib.handlers",
     "rapidsms.contrib.locations",
-    "rapidsms.contrib.messagelog",
-    "rapidsms.contrib.messaging",
-    "rapidsms.contrib.registration",
-    "rapidsms.contrib.scheduler",
-    "rapidsms.contrib.search",
-    "rapidsms.contrib.echo",
+    "rapidsms.contrib.httptester",
+    "rapidsms.contrib.export",
+
+    "iffcpoll"
 ]
 
 
@@ -84,11 +77,7 @@ INSTALLED_APPS = [
 # to add it here, also, to expose it in the rapidsms ui.
 TABS = [
     ("rapidsms.views.dashboard",                            "Dashboard"),
-    ("rapidsms.contrib.messagelog.views.message_log",       "Message Log"),
-    ("rapidsms.contrib.registration.views.registration",    "Registration"),
-    ("rapidsms.contrib.messaging.views.messaging",          "Messaging"),
-    ("rapidsms.contrib.locations.views.locations",          "Map"),
-    ("rapidsms.contrib.scheduler.views.index",              "Event Scheduler"),
+    ("rapidsms.contrib.locations.views.locations",          "Locations"),
     ("rapidsms.contrib.httptester.views.generate_identity", "Message Tester"),
 ]
 
