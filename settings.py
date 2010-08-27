@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     # apps actually used by this project.
     "rapidsms.contrib.ajax",
     "rapidsms.contrib.handlers",
+    "rapidsms.contrib.default",
     "rapidsms.contrib.locations",
     "rapidsms.contrib.httptester",
     "rapidsms.contrib.export",
@@ -167,3 +168,11 @@ import os, tempfile
 TEST_DATABASE_NAME = os.path.join(
     tempfile.gettempdir(),
     "rapidsms.test.sqlite3")
+
+
+# -------------------------------------------------------------------- #
+#                          IFFC CONFIGURATION                          #
+# -------------------------------------------------------------------- #
+
+
+DEFAULT_RESPONSE = "I have no idea what you're talking about."
