@@ -8,3 +8,7 @@ from rapidsms.contrib.locations.models import Location
 
 class Governorate(Location):
     name = models.CharField(max_length=100)
+
+
+class District(Location):
+    name = models.CharField(max_length=100)
