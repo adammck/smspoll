@@ -176,3 +176,4 @@ TEST_DATABASE_NAME = os.path.join(
 
 
 DEFAULT_RESPONSE = "I have no idea what you're talking about."
+NOSE_ARGS = ["--with-doctest"]
