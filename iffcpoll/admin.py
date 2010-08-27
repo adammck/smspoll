@@ -8,3 +8,5 @@ from . import models
 
 admin.site.register(models.Governorate)
 admin.site.register(models.District)
+admin.site.register(models.Option)
+admin.site.register(models.Vote)
