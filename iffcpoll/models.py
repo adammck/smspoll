@@ -36,10 +36,6 @@ class Vote(models.Model):
     connection = models.ForeignKey(Connection, unique=True)
     option = models.ForeignKey(Option)
 
-    age = models.PositiveIntegerField(null=True, blank=True)
-    gender = models.CharField(max_length=1, null=True, blank=True)
-    district = models.ForeignKey(District, null=True, blank=True)
-
     def __unicode__(self):
         return "%s by %s" %\
             (self.option.letter.upper(), self.connection.identity)
