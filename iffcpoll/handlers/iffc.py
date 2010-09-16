@@ -6,30 +6,37 @@ from rapidsms.contrib.handlers.handlers.base import BaseHandler
 from ..models import Option, Vote
 
 
-class VoteHandler(BaseHandler):
+class IffcHandler(BaseHandler):
     """
     This handler watches for incoming votes, by matching them against
     Option instances. Since these votes are probably submitted by the
     general public (not trained reporters), many variations of the
     option are accepted::
 
-      >>> VoteHandler.test("a")
-      [u'Thank you for voting: A.']
+      >>> IffcHandler.test("a")
+      [u'Thank you. What is your age, gender, and district?']
 
-    Only a single vote is accepted from each Connection. This isn't a
-    terribly good way of identifying unique voters, but it's as good as
-    we can reasonably expect. Subsequent votes are rejected::
+    Only a single vote is accepted from each Connection, so we assume
+    that the second incoming message is a response to the demographic
+    request. Ideally, it is in the form ``[age] [gender] [location]``::
 
-      >>> VoteHandler.test("a", identity="xxx")
-      [u'Thank you for voting: A.']
+      >>> IffcHandler.test("10 male baghdad")
+      [u'Thank you.']
 
-      >>> VoteHandler.test("b", identity="xxx")
+    But as above, many variations on are accepted. See ``tests.py`` for
+    a comprehensive list of accepted patterns, or ``utils.py`` for the
+    parser implementation).
+
+    Once the demographic information has been submitted, the Connection
+    is not allowed to vote again.
+
+      >>> IffcHandler.test("b")
       [u'You have already voted.']
 
-    All other messages are ignored::
-
-      >>> VoteHandler.test("whatever")
-      False
+    NOTE: This handler could/should be implemented as two (or more)
+    separate classes, but RapidSMS handlers are only easy to test in
+    isolation (via the BaseHandler.test method). Once scripted testing
+    is fixed and packaged, this handler might be split up.
     """
 
     @classmethod
