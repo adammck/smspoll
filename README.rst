@@ -8,7 +8,7 @@ Starting in October of 2010, the UNICEF Iraq country office will be conducting a
 The results of the poll will be presented live on the website, along with our key messages, related media, guiding documents, and delicious visualizations of `MICS4`_ data.
 
 .. _Iraq Fit For Children: http://iraqfitforchildren.org
-.. _RapidSMS: http://github.com/rapidsms/rapidsms-core-dev
+.. _RapidSMS: http://github.com/rapidsms/rapidsms
 .. _Zain Iraq: http://www.iq.zain.com
 .. _MICS4: http://www.childinfo.org/mics4.html
 
@@ -69,7 +69,7 @@ This project is built upon `RapidSMS`_, which is available on PyPi. To give it a
 
 Grab the latest source, and check that it works::
 
-  $ git clone http://github.com/adammck/smspoll
+  $ git clone http://github.com/ysdoc/iffcpoll
   $ python smspoll/manage.py test
 
 All being well, you can (optionally) update the settings for your environment, then run the RapidSMS router and the Django development server (in separate terminals) as usual::
@@ -86,7 +86,7 @@ License
 
 This project is free software, available under `the BSD license`_.
 
-.. _the BSD license: http://github.com/adammck/smspoll/blob/master/LICENSE
+.. _the BSD license: http://github.com/ysdoc/iffcpoll/blob/master/LICENSE
 
 
 Bugs
@@ -94,4 +94,4 @@ Bugs
 
 Please file bugs on `GitHub`_.
 
-.. _GitHub: http://github.com/adammck/smspoll/issues
+.. _GitHub: http://github.com/ysdoc/iffcpoll/issues
