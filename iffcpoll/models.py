@@ -15,7 +15,12 @@ class District(Location):
     name = models.CharField(max_length=100)
 
 
+class Question(models.Model):
+    text = models.TextField()
+
+
 class Option(models.Model):
+    question = models.ForeignKey(Question)
     letter = models.CharField(max_length=1)
     caption = models.CharField(max_length=100)
 

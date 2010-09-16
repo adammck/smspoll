@@ -325,8 +325,16 @@
     },
     {
         "pk": 1,
+        "model": "iffcpoll.question",
+        "fields": {
+            "text": "What is the most urgent need of children in your community?"
+        }
+    },
+    {
+        "pk": 1,
         "model": "iffcpoll.option",
         "fields": {
+            "question": 1,
             "caption": "Clean Water and Sanitation",
             "letter": "a"
         }
@@ -335,6 +343,7 @@
         "pk": 2,
         "model": "iffcpoll.option",
         "fields": {
+            "question": 1,
             "caption": "Quality Health Care",
             "letter": "b"
         }
@@ -343,6 +352,7 @@
         "pk": 3,
         "model": "iffcpoll.option",
         "fields": {
+            "question": 1,
             "caption": "Nutritious Food",
             "letter": "c"
         }
@@ -351,6 +361,7 @@
         "pk": 4,
         "model": "iffcpoll.option",
         "fields": {
+            "question": 1,
             "caption": "Education",
             "letter": "d"
         }
@@ -359,6 +370,7 @@
         "pk": 5,
         "model": "iffcpoll.option",
         "fields": {
+            "question": 1,
             "caption": "Safety",
             "letter": "e"
         }
