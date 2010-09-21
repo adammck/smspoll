@@ -3,7 +3,8 @@
 
 
 from rapidsms.contrib.handlers.handlers.base import BaseHandler
-from ..models import Option, Vote
+from ..utils import extract_option
+from ..models import Vote
 
 
 class IffcHandler(BaseHandler):
@@ -41,11 +42,17 @@ class IffcHandler(BaseHandler):
 
     @classmethod
     def dispatch(cls, router, msg):
-        for option in Option.objects.all():
-            if msg.text == option.letter:
+        c = msg.connection
+
+        if not c.has_voted():
+            option = extract_option(msg.text)
+
+            if option is not None:
                 inst = cls(router, msg)
                 inst.handle(option)
                 return True
+
+        return None
 
     def handle(self, option):
         if Vote.objects.filter(connection=self.msg.connection):
