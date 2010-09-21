@@ -1,0 +1,36 @@
+[
+    {
+        "pk": 1,
+        "model": "iffcpoll.question",
+        "fields": {
+            "text": "What is your favorite color?"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "iffcpoll.option",
+        "fields": {
+            "question": 1,
+            "caption": "Red",
+            "letter": "r"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "iffcpoll.option",
+        "fields": {
+            "question": 1,
+            "caption": "Green",
+            "letter": "g"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "iffcpoll.option",
+        "fields": {
+            "question": 1,
+            "caption": "Blue",
+            "letter": "b"
+        }
+    }
+]

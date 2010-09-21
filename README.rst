@@ -16,6 +16,8 @@ The results of the poll will be presented live on the website, along with our ke
 Functionality
 -------------
 
+  Note: To enable this functionality, load the ``iffc_2010_nov`` fixture.
+
 User sees a billboard which says something along the lines of::
 
   What is the most urgent need of children in your community?
