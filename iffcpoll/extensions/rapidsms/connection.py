@@ -10,7 +10,7 @@ class IffcConnectionExtension(models.Model):
     Extend the RapidSMS Connection model with demographic information.
     It might seem more obvious to attach these to a Contact, but this
     app makes no effort to support more than one human per Connection,
-    so I'm putting them here to accurately model the situaion.
+    so I'm putting them here to accurately model the actual situation.
     """
 
     GENDER_OPTIONS = (
