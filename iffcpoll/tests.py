@@ -13,37 +13,18 @@ class OptionExtractor(TestCase):
     def setUp(self):
         self.red = Option.objects.get(pk=1)
 
-    def test_extract_type_failure(self):
-        """
-        Check that extract_option raises TypeError when called with
-        anything other than a basestring.
-        """
-
+    def test_rejcts_non_strings(self):
         for obj in [True, None, object]:
             self.assertRaises(TypeError, extract_option, obj)
 
-    def test_extract_value_failure(self):
-        """
-        Check that extract_option raises ValueError when called with
-        a string which does not match any Option.
-        """
-
+    def test_rejects_junk_strings(self):
         for text in ["jibberish", "!@#$%^&*"]:
             self.assertRaises(ValueError, extract_option, text)
 
-    def test_simple_extract(self):
-        """
-        Check that extract_option can extract simple submissions, which
-        contain only the caption or letter of the Option.
-        """
-
+    def test_matches_captions_and_letters(self):
         for text in ["RED", "Red", "red", "R", "r"]:
             self.assertEqual(extract_option(text), self.red)
 
-    def test_almost_caption_extract(self):
-        """
-        Check that extract_option forgives spelling mistakes.
-        """
-
+    def test_forgives_spelling_mistakes(self):
         for text in ["rud", "rrred", "red!"]:
             self.assertEqual(extract_option(text), self.red)
