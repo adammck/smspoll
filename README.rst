@@ -69,6 +69,10 @@ This project is built upon `RapidSMS`_, which is available on PyPi. To give it a
   $ source rapidsms_dev/bin/activate
   $ pip install rapidsms
 
+The oddly-named `python-Levenshtein`_ library is recommended (to enable best-guess matching), but not required. (It's a native extension, which can make installation a bit tricky on some platforms.)::
+
+  $ pip install python-Levenshtein
+
 Grab the latest source, and check that it works::
 
   $ git clone http://github.com/ysdoc/iffcpoll
@@ -81,6 +85,7 @@ All being well, you can (optionally) update the settings for your environment, t
   $ ./manage.py runserver
 
 .. _virtualenv: http://pypi.python.org/pypi/virtualenv
+.. _ python-Levenshtein: http://pypi.python.org/pypi/python-Levenshtein/0.10.1
 
 
 License
