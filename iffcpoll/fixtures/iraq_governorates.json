@@ -3,179 +3,305 @@
         "pk": 1,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Baghdad",
-            "point": 1
+            "location_ptr": 1
         }
     },
     {
         "pk": 2,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Salah ad Din",
-            "point": 2
+            "location_ptr": 2
         }
     },
     {
         "pk": 3,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Diyala",
-            "point": 3
+            "location_ptr": 3
         }
     },
     {
         "pk": 4,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Wasit",
-            "point": 4
+            "location_ptr": 4
         }
     },
     {
         "pk": 5,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Maysan",
-            "point": 5
+            "location_ptr": 5
         }
     },
     {
         "pk": 6,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Basra",
-            "point": 6
+            "location_ptr": 6
         }
     },
     {
         "pk": 7,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Dhi Qar",
-            "point": 7
+            "location_ptr": 7
         }
     },
     {
         "pk": 8,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Al Muthanna",
-            "point": 8
+            "location_ptr": 8
         }
     },
     {
         "pk": 9,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Al-Q\u0101disiyyah",
-            "point": 9
+            "location_ptr": 9
         }
     },
     {
         "pk": 10,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Babil",
-            "point": 10
+            "location_ptr": 10
         }
     },
     {
         "pk": 11,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Karbala",
-            "point": 11
+            "location_ptr": 11
         }
     },
     {
         "pk": 12,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Najaf",
-            "point": 12
+            "location_ptr": 12
         }
     },
     {
         "pk": 13,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Al Anbar",
-            "point": 13
+            "location_ptr": 13
         }
     },
     {
         "pk": 14,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Ninawa",
-            "point": 14
+            "location_ptr": 14
         }
     },
     {
         "pk": 15,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Duhok",
-            "point": 15
+            "location_ptr": 15
         }
     },
     {
         "pk": 16,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Erbil",
-            "point": 16
+            "location_ptr": 16
         }
     },
     {
         "pk": 17,
         "model": "iffcpoll.governorate",
         "fields": {
-            "parent_id": null,
-            "parent_type": null,
             "name": "Kirkuk",
-            "point": 17
+            "location_ptr": 17
         }
     },
     {
         "pk": 18,
         "model": "iffcpoll.governorate",
         "fields": {
+            "name": "Sulaymaniyah",
+            "location_ptr": 18
+        }
+    },
+    {
+        "pk": 1,
+        "model": "locations.location",
+        "fields": {
             "parent_id": null,
             "parent_type": null,
-            "name": "Sulaymaniyah",
+            "point": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 2
+        }
+    },
+    {
+        "pk": 3,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 3
+        }
+    },
+    {
+        "pk": 4,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 4
+        }
+    },
+    {
+        "pk": 5,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 5
+        }
+    },
+    {
+        "pk": 6,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 6
+        }
+    },
+    {
+        "pk": 7,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 7
+        }
+    },
+    {
+        "pk": 8,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 8
+        }
+    },
+    {
+        "pk": 9,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 9
+        }
+    },
+    {
+        "pk": 10,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 10
+        }
+    },
+    {
+        "pk": 11,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 11
+        }
+    },
+    {
+        "pk": 12,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 12
+        }
+    },
+    {
+        "pk": 13,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 13
+        }
+    },
+    {
+        "pk": 14,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 14
+        }
+    },
+    {
+        "pk": 15,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 15
+        }
+    },
+    {
+        "pk": 16,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 16
+        }
+    },
+    {
+        "pk": 17,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
+            "point": 17
+        }
+    },
+    {
+        "pk": 18,
+        "model": "locations.location",
+        "fields": {
+            "parent_id": null,
+            "parent_type": null,
             "point": 18
         }
     },
