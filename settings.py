@@ -150,10 +150,8 @@ TEST_EXCLUDED_APPS = [
 ]
 
 
-# the default ROOT_URLCONF module, bundled with rapidsms, detects and
-# maps the urls.py module of each app into a single project urlconf.
-# this is handy, but too magical for the taste of some. (remove it?)
-ROOT_URLCONF = "rapidsms.djangoproject.urls"
+# the project-level url patterns.
+ROOT_URLCONF = "urls"
 
 
 # since we might hit the database from any thread during testing, the
