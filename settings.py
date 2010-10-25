@@ -51,15 +51,12 @@ INSTALLED_APPS = [
     "djtables",
     "rapidsms",
 
-    # enable the django admin using a little shim app (which includes
-    # the required urlpatterns), and a bunch of undocumented apps that
-    # the AdminSite seems to explode without.
+    # dependencies of the django admin.
     "django.contrib.sites",
     "django.contrib.auth",
     "django.contrib.admin",
     "django.contrib.sessions",
     "django.contrib.contenttypes",
-    "rapidsms.contrib.djangoadmin",
 
     # apps actually used by this project.
     "rapidsms.contrib.ajax",
