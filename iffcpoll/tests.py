@@ -8,7 +8,7 @@ from .models import Option
 
 
 class OptionExtractor(TestCase):
-    fixtures = ["test_data"]
+    fixtures = ["test_question"]
 
     def setUp(self):
         self.red = Option.objects.get(pk=1)
