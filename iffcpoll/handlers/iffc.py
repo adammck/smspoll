@@ -49,12 +49,20 @@ class IffcHandler(BaseHandler):
 
             if option is not None:
                 inst = cls(router, msg)
-                inst.handle(option)
+                inst.handle_option(option)
+                return True
+
+        else:
+            demog = extract_demographics(msg.text)
+
+            if demog is not None:
+                inst = cls(router, msg)
+                inst.handle_demog(*demog)
                 return True
 
         return None
 
-    def handle(self, option):
+    def handle_option(self, option):
         if Vote.objects.filter(connection=self.msg.connection):
             return self.respond("You have already voted.")
 
@@ -65,3 +73,7 @@ class IffcHandler(BaseHandler):
         return self.respond(
             "Thank you for voting: %(vote)s.",
             vote=vote.option.letter.upper())
+
+    def handle_demog(self, age, gender, district):
+        return self.respond(
+            "Thank you. [Education] is important, because [blah blah blah].")

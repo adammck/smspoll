@@ -52,3 +52,26 @@ def extract_option(text):
         return m[0][0]
 
     raise ValueError("No Option could be found in: %s" % text)
+
+
+def extract_demographics(text):
+    """
+    Return the age, gender, and District contained by ``text`` (in
+    various fuzzy ways), or raise a ValueError if none could be found.
+    """
+
+    if not isinstance(text, basestring):
+        raise TypeError("Not a basestring: %r" % text)
+
+    t = unicode(text).lower()
+
+
+def extract_age(text):
+    """
+    Return the age contained by ``text``.
+    """
+
+    if not isinstance(text, basestring):
+        raise TypeError("Not a basestring: %r" % text)
+
+    return 5
